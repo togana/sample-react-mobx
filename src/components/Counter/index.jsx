@@ -11,9 +11,9 @@ export default class Counter extends Component {
     return (
       <div>
         {count.num}
-        <button onClick={count.onIncrement}>+</button>
-        <button onClick={count.onDecrement}>-</button>
-        <button onClick={count.onAsyncIecrement}>1000msあとに+1</button>
+        <button onClick={count.onIncrement}>+1</button>
+        <button onClick={count.onDecrement}>-1</button>
+        <button onClick={count.onAsyncIecrement}>After 1000ms +1</button>
       </div>
     );
   }
