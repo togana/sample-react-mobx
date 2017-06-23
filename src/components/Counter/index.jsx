@@ -9,6 +9,9 @@ export default class Counter extends Component {
   render() {
     const { count } = this.props;
 
+    // count.numで表示しているがcount.getCountでも同じものが表示できる
+    // getCountはcomputedを利用している
+    // computedは[reselect](https://github.com/reactjs/reselect)と同じようなものって認識
     return (
       <div>
         {count.num}
