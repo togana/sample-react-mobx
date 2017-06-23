@@ -11,6 +11,8 @@ export default class Counter extends Component {
     return (
       <div>
         {count.num}
+        <button onClick={count.increment}>+</button>
+        <button onClick={count.decrement}>-</button>
       </div>
     );
   }
