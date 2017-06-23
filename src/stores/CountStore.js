@@ -5,8 +5,8 @@ const sleep = msec => new Promise(resolve => setTimeout(resolve, msec));
 export default class CountStore {
   @observable num = 0;
 
-  @computed get getCount() {
-    return this.num;
+  @computed get getDoubleCount() {
+    return this.num * 2;
   }
 
   @action.bound onIncrement() {
