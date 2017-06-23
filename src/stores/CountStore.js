@@ -7,10 +7,11 @@ export default class CountStore {
     return this.num;
   }
 
-  @action.bound increment() {
+  @action.bound onIncrement() {
     this.num = this.num + 1;
   }
-  @action.bound decrement() {
+
+  @action.bound onDecrement() {
     this.num = this.num - 1;
   }
 }
