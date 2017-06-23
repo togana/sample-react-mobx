@@ -6,6 +6,10 @@ import DevTools from 'mobx-react-devtools';
 @inject('count')
 @observer
 export default class Counter extends Component {
+  static propTypes = {
+    count: PropTypes.object.isRequired,
+  };
+
   render() {
     const { count } = this.props;
 
@@ -21,7 +25,3 @@ export default class Counter extends Component {
     );
   }
 }
-
-Counter.wrappedComponent.propTypes = {
-  count: PropTypes.object.isRequired,
-};
