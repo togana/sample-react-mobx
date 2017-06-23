@@ -19,6 +19,6 @@ export default class CountStore {
 
   @action.bound async onAsyncIecrement() {
     await sleep(1000);
-    this.num = this.num + 1;
+    this.onIncrement();
   }
 }
